@@ -14,7 +14,7 @@
 G4VPhysicalVolume* HGCAL_DetectorConstruction::Construct()
 {
     G4NistManager* nistManager = G4NistManager::Instance();
-    G4Material* air = nistManager->FindOrBuildMaterial("G4_Air");
+    G4Material* air = nistManager->FindOrBuildMaterial("G4_AIR");
     G4double wl = 2.*m;
     G4Box* worldS = new G4Box("world", wl, wl, wl);
     G4LogicalVolume* worldLV = new G4LogicalVolume(worldS, air, "world");

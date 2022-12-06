@@ -35,6 +35,8 @@
 #include "G4VisExecutive.hh"
 #include "HGCAL_Detector.hh"
 #include "HGCAL_PhysicsList.hh"
+#include "HGCAL_ActionInit.hh"
+#include "HGCAL_ParticleGun.hh"
 int main(int argc, char** argv)
 {
     // Detect interactive mode (if no arguments) and define UI session
@@ -47,6 +49,7 @@ int main(int argc, char** argv)
     G4RunManager* runManager = new G4RunManager;
     runManager->SetUserInitialization(new HGCAL_DetectorConstruction());
     runManager->SetUserInitialization(new HGCAL_PhysicsList());
+    runManager->SetUserInitialization(new HGCAL_ActionInitialization());
 
     // Initialize visualization
     G4VisManager* visManager = new G4VisExecutive;

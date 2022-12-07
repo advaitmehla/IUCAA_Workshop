@@ -49,7 +49,7 @@ int main(int argc, char** argv)
     }
      
     // Construct the run manager
-    G4RunManager* runManager = new G4MTRunManager;
+    G4RunManager* runManager = new G4RunManager;
     runManager->SetUserInitialization(new HGCAL_DetectorConstruction());
     runManager->SetUserInitialization(new FTFP_BERT);
     runManager->SetUserInitialization(new HGCAL_ActionInitialization());

@@ -15,11 +15,11 @@ G4bool HGCAL_SensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *R
     {
         G4StepPoint* pt = aStep->GetPostStepPoint();
         G4ThreeVector pos = pt->GetPosition();
-        // G4cout <<"Particle position: " << pos*cm << G4endl;
-        // // G4int cp = pt->GetTouchable()->GetCopyNumber(2);
-        // // G4cout << "copy:" << cp << G4endl;
-        // G4ThreeVector detpos = pt->GetTouchable()->GetVolume()->GetObjectTranslation();
-        // G4cout <<"Detector position: " << detpos*cm << G4endl;
+        G4cout <<"Particle position: " << pos << G4endl;
+        G4String cp = pt->GetTouchable()->GetVolume()->GetName();
+        G4cout << "copy:" << cp << pt->GetTouchable()->GetVolume()->GetCopyNo() << G4endl;
+        G4ThreeVector detpos = pt->GetTouchable()->GetVolume()->GetObjectTranslation();
+        G4cout <<"Detector position: " << detpos << G4endl;
     }
 
     // fEventAction->AddEdep(edep);

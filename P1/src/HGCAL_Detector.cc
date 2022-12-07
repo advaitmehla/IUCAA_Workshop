@@ -52,7 +52,7 @@ G4VPhysicalVolume* HGCAL_DetectorConstruction::Construct()
     {
         for (int j = 0; j<10; j++)
         {
-            Si_pix_PVs[pcopy] = new G4PVPlacement(0, G4ThreeVector(-s + s2 + 2*i*s2,-s + s2 + 2*j*s2,0), Si_pix_LV, "Si_pix", Si_LV, false, 0, true);
+            Si_pix_PVs[pcopy] = new G4PVPlacement(0, G4ThreeVector(-s + s2 + 2*i*s2,-s + s2 + 2*j*s2,0), Si_pix_LV, "Si_pix", Si_LV, true, pcopy, true);
             pcopy++;
         }
     }
@@ -69,7 +69,7 @@ G4VPhysicalVolume* HGCAL_DetectorConstruction::Construct()
     d += 6.05*mm;
     CuW_PV[1] = new G4PVPlacement(0, G4ThreeVector(0,0,d + 1.4/2.*mm), CuW_LV, "CuWPV2", detboxLV, true, 0, true);
     d += 1.4*mm;
-    Si_PV[1] = new G4PVPlacement(0, G4ThreeVector(0,0,d + 0.3/2*mm), Si_LV, "SiPV2", detboxLV, true, 1, true);
+    Si_PV[1] = new G4PVPlacement(0, G4ThreeVector(0,0,d + 0.3/2.*mm), Si_LV, "SiPV", detboxLV, true, 1, true);
     d += 0.3*mm;
     G4VPhysicalVolume* Pb_PV = new G4PVPlacement(0, G4ThreeVector(0,0,d + 4.97/2.*mm), Pb_LV, "PbPV", detboxLV, false, 0, true);
 
@@ -93,4 +93,5 @@ void HGCAL_DetectorConstruction::ConstructSDandField()
 {
     HGCAL_SensitiveDetector* sens_Si = new HGCAL_SensitiveDetector("sens_Si");
     Si_pix_LV->SetSensitiveDetector(sens_Si);
+    // SetSensitiveDetector("Si_pix", sens_Si);
 }

@@ -4,7 +4,7 @@
 # or interactively: Idle> /control/execute run1.mac
 #
 #/control/cout/setCoutFile verbose.txt
-#/run/numberOfThreads 8
+/run/numberOfThreads 12
 #/random/setSeeds 16253159 3
 /run/initialize
 #

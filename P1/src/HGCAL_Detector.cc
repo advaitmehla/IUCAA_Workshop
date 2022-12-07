@@ -7,7 +7,8 @@
 #include "G4Material.hh"
 #include "G4NistManager.hh"
 #include "G4SystemOfUnits.hh"
-
+#include "G4SDManager.hh"
+#include "HGCAL_SensitiveDetector.hh"
 // Geometry shape header files
 #include "G4Box.hh"
 
@@ -42,6 +43,20 @@ G4VPhysicalVolume* HGCAL_DetectorConstruction::Construct()
     G4LogicalVolume* Cu_LV = new G4LogicalVolume(Cu_slice, Cu, "Cu_slice");
     G4LogicalVolume* CuW_LV = new G4LogicalVolume(CuW_slice, CuW, "CuW_slice");
     G4LogicalVolume* Pb_LV = new G4LogicalVolume(Pb_slice, Pb, "Pb_slice");
+    G4double s2 = 30*cm/2;
+    G4Box* Si_pix = new G4Box("Si_pix",s2,s2,0.3/2.*mm);
+    Si_pix_LV = new G4LogicalVolume(Si_pix, Si, "Si_pix");
+    G4VPhysicalVolume* Si_pix_PVs[100];
+    G4int pcopy = 0;
+    for (int i =0; i<10; i++)
+    {
+        for (int j = 0; j<10; j++)
+        {
+            Si_pix_PVs[pcopy] = new G4PVPlacement(0, G4ThreeVector(-s + s2 + 2*i*s2,-s + s2 + 2*j*s2,0), Si_pix_LV, "Si_pix", Si_LV, false, 0, true);
+            pcopy++;
+        }
+    }
+
 
     G4VPhysicalVolume* Si_PV[2];
     G4VPhysicalVolume* CuW_PV[2];
@@ -64,10 +79,18 @@ G4VPhysicalVolume* HGCAL_DetectorConstruction::Construct()
         detboxPVs[i] = new G4PVPlacement(0, G4ThreeVector(0,0,4.5*m - 2*h*i), "detbox", detboxLV, worldPV, true, i, true);
     }
         
+    // G4SDManager *sdman = G4SDManager::GetSDMpointer();
+    // HGCAL_SensitiveDetector *mySD = new HGCAL_SensitiveDetector("MySensitiveDetector");
+    // sdman->AddNewDetector(mySD); 
+
 
 
     return worldPV;
 }
 
 
-
+void HGCAL_DetectorConstruction::ConstructSDandField()
+{
+    HGCAL_SensitiveDetector* sens_Si = new HGCAL_SensitiveDetector("sens_Si");
+    Si_pix_LV->SetSensitiveDetector(sens_Si);
+}

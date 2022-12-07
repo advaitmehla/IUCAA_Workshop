@@ -30,6 +30,7 @@
  */
 
 #include "G4RunManager.hh"
+#include "G4MTRunManager.hh"
 #include "G4UImanager.hh"
 #include "G4UIExecutive.hh"
 #include "G4VisExecutive.hh"
@@ -37,6 +38,8 @@
 #include "HGCAL_PhysicsList.hh"
 #include "HGCAL_ActionInit.hh"
 #include "HGCAL_ParticleGun.hh"
+#include "G4VModularPhysicsList.hh"
+#include "FTFP_BERT.hh"
 int main(int argc, char** argv)
 {
     // Detect interactive mode (if no arguments) and define UI session
@@ -46,9 +49,9 @@ int main(int argc, char** argv)
     }
      
     // Construct the run manager
-    G4RunManager* runManager = new G4RunManager;
+    G4RunManager* runManager = new G4MTRunManager;
     runManager->SetUserInitialization(new HGCAL_DetectorConstruction());
-    runManager->SetUserInitialization(new HGCAL_PhysicsList());
+    runManager->SetUserInitialization(new FTFP_BERT);
     runManager->SetUserInitialization(new HGCAL_ActionInitialization());
 
     // Initialize visualization

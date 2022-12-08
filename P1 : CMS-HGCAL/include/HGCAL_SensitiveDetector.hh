@@ -4,7 +4,8 @@ class HGCAL_SensitiveDetector : public G4VSensitiveDetector
 {
     public:
         HGCAL_SensitiveDetector(G4String);
-        virtual ~HGCAL_SensitiveDetector(){};
+        ~HGCAL_SensitiveDetector(){};
+    private:
         virtual G4bool ProcessHits(G4Step *, G4TouchableHistory *);
         // void Initialize(G4HCofThisEvent*)
         // {

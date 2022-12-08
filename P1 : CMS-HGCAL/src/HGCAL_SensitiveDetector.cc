@@ -8,12 +8,10 @@ HGCAL_SensitiveDetector::HGCAL_SensitiveDetector(G4String name) : G4VSensitiveDe
 
 G4bool HGCAL_SensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROHist)
 {
-    // ofstream file;
-    // file.open("out.txt", ios::out | ios::app);
     G4double edep = aStep->GetTotalEnergyDeposit();
     if (edep>0)
     {
-        G4StepPoint* pt = aStep->GetPostStepPoint();
+        G4StepPoint* pt = aStep->GetPreStepPoint();
         G4ThreeVector pos = pt->GetPosition();
         G4cout <<"Particle position: " << pos << G4endl;
         G4String cp = pt->GetTouchable()->GetVolume()->GetName();
@@ -22,6 +20,5 @@ G4bool HGCAL_SensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *R
         G4cout <<"Detector position: " << detpos << G4endl;
     }
 
-    // fEventAction->AddEdep(edep);
-    return(0);
+    return true;
 }

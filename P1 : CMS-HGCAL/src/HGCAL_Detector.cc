@@ -45,7 +45,7 @@ G4VPhysicalVolume* HGCAL_DetectorConstruction::Construct()
     G4LogicalVolume* Pb_LV = new G4LogicalVolume(Pb_slice, Pb, "Pb_slice");
     G4double s2 = 30*cm/2;
     G4Box* Si_pix = new G4Box("Si_pix",s2,s2,0.3/2.*mm);
-    Si_pix_LV = new G4LogicalVolume(Si_pix, Si, "Si_pix");
+    Si_pix_LV = new G4LogicalVolume(Si_pix, Si, "Si_pixLV");
     G4VPhysicalVolume* Si_pix_PVs[100];
     G4int pcopy = 0;
     for (int i =0; i<10; i++)
@@ -79,9 +79,6 @@ G4VPhysicalVolume* HGCAL_DetectorConstruction::Construct()
         detboxPVs[i] = new G4PVPlacement(0, G4ThreeVector(0,0,4.5*m - 2*h*i), "detbox", detboxLV, worldPV, true, i, true);
     }
         
-    // G4SDManager *sdman = G4SDManager::GetSDMpointer();
-    // HGCAL_SensitiveDetector *mySD = new HGCAL_SensitiveDetector("MySensitiveDetector");
-    // sdman->AddNewDetector(mySD); 
 
 
 
@@ -92,6 +89,8 @@ G4VPhysicalVolume* HGCAL_DetectorConstruction::Construct()
 void HGCAL_DetectorConstruction::ConstructSDandField()
 {
     HGCAL_SensitiveDetector* sens_Si = new HGCAL_SensitiveDetector("sens_Si");
-    Si_pix_LV->SetSensitiveDetector(sens_Si);
-    // SetSensitiveDetector("Si_pix", sens_Si);
+    G4SDManager *sdman = G4SDManager::GetSDMpointer();
+    sdman->AddNewDetector(sens_Si); 
+    // Si_pix_LV->SetSensitiveDetector(sens_Si);
+    SetSensitiveDetector("Si_pixLV", sens_Si);
 }

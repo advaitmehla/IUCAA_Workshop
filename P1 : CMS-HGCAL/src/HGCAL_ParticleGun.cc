@@ -12,8 +12,8 @@ HGCAL_PrimaryGeneratorAction :: HGCAL_PrimaryGeneratorAction()
     G4ParticleDefinition *particle = G4Proton::Definition();
     fParticleGun->SetParticleDefinition(particle);
     fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0.,0.,1.));
-    fParticleGun->SetParticleEnergy(1*GeV);
-    fParticleGun->SetParticlePosition(G4ThreeVector(55*cm,-85*cm,30.*cm));
+    fParticleGun->SetParticleEnergy(3*GeV);
+    fParticleGun->SetParticlePosition(G4ThreeVector(0*cm,0*cm,30.*cm));
 }
 
 void HGCAL_PrimaryGeneratorAction :: GeneratePrimaries(G4Event* evt)

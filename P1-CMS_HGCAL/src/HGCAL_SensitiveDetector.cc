@@ -1,6 +1,6 @@
 #include "HGCAL_SensitiveDetector.hh"
 using namespace std;
-#include "G4SystemOfUnits.hh"
+#include "G4SystemOfUnits.hh" 
 HGCAL_SensitiveDetector::HGCAL_SensitiveDetector(G4String name) : G4VSensitiveDetector(name)
 {
     // fEventAction = new HGCAL_EventAction();
@@ -8,6 +8,7 @@ HGCAL_SensitiveDetector::HGCAL_SensitiveDetector(G4String name) : G4VSensitiveDe
 
 G4bool HGCAL_SensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROHist)
 {
+
     G4double edep = aStep->GetTotalEnergyDeposit();
     if (edep>0)
     {

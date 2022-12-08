@@ -23,6 +23,9 @@ void ScatPolActionInitialization::Build() const
 
     // Set PrimaryGenerator action 
     SetUserAction(new ScatPolPrimaryGeneratorAction());
+    SetUserAction(new ScatPolEventAction());
+    SetUserAction(new ScatPolSteppingAction());
+    SetUserAction(new ScatPolRunAction());
 
 
     // Set Run action, Event action stepping action

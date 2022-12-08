@@ -1,7 +1,6 @@
 
 #include "ScatPolEventAction.hh"
 #include "ScatPolRunAction.hh"
-
 #include "G4Event.hh"
 #include "G4EventManager.hh"
 #include "G4TrajectoryContainer.hh"

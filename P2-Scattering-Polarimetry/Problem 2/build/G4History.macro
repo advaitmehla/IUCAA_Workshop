@@ -35,5 +35,19 @@
 /gps/pos/radius 10 mm
 /gps/pos/centre 0. 0. -100 mm
 /gps/energy 50 keV
-/run/beamOn 1
+/run/beamOn 100
 /vis/scene/notifyHandlers scene-0
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1

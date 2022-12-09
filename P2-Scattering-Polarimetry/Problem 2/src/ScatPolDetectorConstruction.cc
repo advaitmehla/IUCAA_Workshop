@@ -82,7 +82,7 @@ G4VPhysicalVolume* ScatPolDetectorConstruction::Construct()
   {
     G4RotationMatrix * RotMat = new G4RotationMatrix();
     RotMat->rotate(M_PI/2.+2*i*M_PI/12.,G4ThreeVector(0,0,1));
-    detboxPVs[i] = new G4PVPlacement(RotMat,G4ThreeVector(R*sin(2*M_PI/12*i),R*cos(2*M_PI/12*i),0),detboxLV,"detboxPV",logicWorld,true,i,true);
+    detboxPVs[i] = new G4PVPlacement(RotMat,G4ThreeVector(R*sin(2*M_PI/12*i),R*cos(2*M_PI/12*i),0),detboxLV,"detboxPV",logicWorld,true,30*i,true);
   }
 
 

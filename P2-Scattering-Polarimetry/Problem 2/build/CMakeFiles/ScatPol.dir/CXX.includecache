@@ -6,18 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../include/ScatPolActionInitialization.hh
-G4VUserActionInitialization.hh
-../include/G4VUserActionInitialization.hh
-
-../include/ScatPolDetectorConstruction.hh
-G4VUserDetectorConstruction.hh
-../include/G4VUserDetectorConstruction.hh
-iostream
--
-fstream
--
-
 ../include/ScatPolEventAction.hh
 G4UserEventAction.hh
 ../include/G4UserEventAction.hh
@@ -27,14 +15,8 @@ G4ThreeVector.hh
 ../include/G4ThreeVector.hh
 ScatPolRunAction.hh
 ../include/ScatPolRunAction.hh
-
-../include/ScatPolPhysicsList.hh
-G4VModularPhysicsList.hh
-../include/G4VModularPhysicsList.hh
-
-../include/ScatPolPrimaryGeneratorAction.hh
-G4VUserPrimaryGeneratorAction.hh
-../include/G4VUserPrimaryGeneratorAction.hh
+tuple
+-
 
 ../include/ScatPolRunAction.hh
 G4UserRunAction.hh
@@ -48,88 +30,6 @@ fstream
 G4ThreeVector.hh
 ../include/G4ThreeVector.hh
 vector
--
-
-../include/ScatPolSteppingAction.hh
-iostream
--
-string
--
-fstream
--
-G4UserSteppingAction.hh
-../include/G4UserSteppingAction.hh
-
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/ScatPol.cc
-ScatPolDetectorConstruction.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/ScatPolDetectorConstruction.hh
-ScatPolActionInitialization.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/ScatPolActionInitialization.hh
-ScatPolPrimaryGeneratorAction.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/ScatPolPrimaryGeneratorAction.hh
-ScatPolPhysicsList.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/ScatPolPhysicsList.hh
-G4RunManager.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/G4RunManager.hh
-G4UImanager.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/G4UImanager.hh
-G4UIExecutive.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/G4UIExecutive.hh
-G4VisExecutive.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/G4VisExecutive.hh
-
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/ScatPolActionInitialization.cc
-ScatPolActionInitialization.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/ScatPolActionInitialization.hh
-ScatPolPrimaryGeneratorAction.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/ScatPolPrimaryGeneratorAction.hh
-ScatPolRunAction.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/ScatPolRunAction.hh
-ScatPolEventAction.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/ScatPolEventAction.hh
-ScatPolSteppingAction.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/ScatPolSteppingAction.hh
-
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/ScatPolDetectorConstruction.cc
-ScatPolDetectorConstruction.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/ScatPolDetectorConstruction.hh
-G4SystemOfUnits.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4SystemOfUnits.hh
-G4Material.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4Material.hh
-G4Box.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4Box.hh
-G4Cons.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4Cons.hh
-G4Tubs.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4Tubs.hh
-G4LogicalVolume.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4LogicalVolume.hh
-G4ThreeVector.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4ThreeVector.hh
-G4RotationMatrix.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4RotationMatrix.hh
-G4Transform3D.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4Transform3D.hh
-G4SubtractionSolid.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4SubtractionSolid.hh
-G4PVPlacement.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4PVPlacement.hh
-G4Colour.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4Colour.hh
-G4VisAttributes.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4VisAttributes.hh
-G4NistManager.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4NistManager.hh
-G4AssemblyVolume.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4AssemblyVolume.hh
-G4AssemblyTriplet.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4AssemblyTriplet.hh
-G4VSolid.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4VSolid.hh
-iostream
--
-fstream
 -
 
 /home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/ScatPolEventAction.cc
@@ -151,80 +51,10 @@ G4UnitsTable.hh
 /home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4UnitsTable.hh
 G4RunManager.hh
 /home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4RunManager.hh
+G4SystemOfUnits.hh
+/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4SystemOfUnits.hh
 iomanip
 -
-G4ThreeVector.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4ThreeVector.hh
-
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/ScatPolPhysicsList.cc
-ScatPolPhysicsList.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/ScatPolPhysicsList.hh
-G4EmLivermorePolarizedPhysics.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4EmLivermorePolarizedPhysics.hh
-
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/ScatPolPrimaryGeneratorAction.cc
-ScatPolPrimaryGeneratorAction.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/ScatPolPrimaryGeneratorAction.hh
-G4RunManager.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4RunManager.hh
-G4Event.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4Event.hh
-G4GeneralParticleSource.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4GeneralParticleSource.hh
-G4ParticleTable.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4ParticleTable.hh
-G4ParticleDefinition.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4ParticleDefinition.hh
-G4SystemOfUnits.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4SystemOfUnits.hh
-Randomize.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/Randomize.hh
-
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/ScatPolRunAction.cc
-ScatPolRunAction.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/ScatPolRunAction.hh
-ScatPolDetectorConstruction.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/ScatPolDetectorConstruction.hh
-G4Run.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4Run.hh
-G4RunManager.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4RunManager.hh
-G4UnitsTable.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4UnitsTable.hh
-iomanip
--
-fstream
--
-G4SystemOfUnits.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4SystemOfUnits.hh
-G4ThreeVector.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4ThreeVector.hh
-
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/ScatPolSteppingAction.cc
-ScatPolSteppingAction.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/ScatPolSteppingAction.hh
-ScatPolDetectorConstruction.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/ScatPolDetectorConstruction.hh
-ScatPolEventAction.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/ScatPolEventAction.hh
-G4SteppingManager.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4SteppingManager.hh
-G4EventManager.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4EventManager.hh
-G4RunManager.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4RunManager.hh
-G4Event.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4Event.hh
-G4UnitsTable.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4UnitsTable.hh
-G4SystemOfUnits.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4SystemOfUnits.hh
-iostream
--
-string
--
-G4String.hh
-/home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4String.hh
 G4ThreeVector.hh
 /home/advait/IUCAA-workshop/IUCAA_Workshop/P2-Scattering-Polarimetry/Problem 2/src/G4ThreeVector.hh
 
@@ -243,16 +73,6 @@ CLHEP/Vector/ThreeVector.h
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/CLHEP/Geometry/CLHEP/Vector/ThreeVector.h
 CLHEP/Geometry/BasicVector3D.h
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/CLHEP/Geometry/CLHEP/Geometry/BasicVector3D.h
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/CLHEP/Geometry/Plane3D.h
-iosfwd
--
-CLHEP/Geometry/Point3D.h
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/CLHEP/Geometry/CLHEP/Geometry/Point3D.h
-CLHEP/Geometry/Normal3D.h
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/CLHEP/Geometry/CLHEP/Geometry/Normal3D.h
-CLHEP/Geometry/Transform3D.h
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/CLHEP/Geometry/CLHEP/Geometry/Transform3D.h
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/CLHEP/Geometry/Point3D.h
 iosfwd
@@ -672,10 +492,6 @@ CLHEP/Vector/ThreeVector.icc
 cmath
 -
 
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ASCIITree.hh
-G4VTree.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VTree.hh
-
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4AffineTransform.hh
 G4Types.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Types.hh
@@ -701,28 +517,6 @@ G4AllocatorPool.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4AllocatorPool.hh
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ApplicationState.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4AssemblyTriplet.hh
-G4ThreeVector.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ThreeVector.hh
-G4RotationMatrix.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4RotationMatrix.hh
-G4AssemblyTriplet.icc
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4AssemblyTriplet.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4AssemblyTriplet.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4AssemblyVolume.hh
-vector
--
-G4Transform3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Transform3D.hh
-G4AssemblyTriplet.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4AssemblyTriplet.hh
-G4AssemblyVolume.icc
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4AssemblyVolume.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4AssemblyVolume.icc
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4AutoLock.hh
 G4Threading.hh
@@ -760,109 +554,7 @@ G4BlockingList.icc
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4BlockingList.icc
 
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4BooleanSolid.hh
-G4DisplacedSolid.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4DisplacedSolid.hh
-G4ThreeVector.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ThreeVector.hh
-G4RotationMatrix.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4RotationMatrix.hh
-G4Transform3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Transform3D.hh
-G4BooleanSolid.icc
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4BooleanSolid.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4BooleanSolid.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4BoundingEnvelope.hh
-vector
--
-geomdefs.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/geomdefs.hh
-G4ThreeVector.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ThreeVector.hh
-G4VoxelLimits.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VoxelLimits.hh
-G4Transform3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Transform3D.hh
-G4Point3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Point3D.hh
-G4Plane3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Plane3D.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Box.hh
-G4GeomTypes.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4GeomTypes.hh
-G4UBox.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4UBox.hh
-G4CSGSolid.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4CSGSolid.hh
-G4Polyhedron.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Polyhedron.hh
-G4Box.icc
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Box.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Box.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4CSGSolid.hh
-G4VSolid.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VSolid.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Cache.hh
-atomic
--
-map
--
-system_error
--
-G4AutoLock.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4AutoLock.hh
-G4CacheDetails.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4CacheDetails.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4CacheDetails.hh
-G4Threading.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Threading.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-vector
--
-
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ClassificationOfNewTrack.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Color.hh
-G4Colour.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Colour.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Colour.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-G4ThreeVector.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ThreeVector.hh
-iostream
--
-map
--
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Cons.hh
-G4GeomTypes.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4GeomTypes.hh
-G4UCons.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4UCons.hh
-CLHEP/Units/PhysicalConstants.h
--
-G4CSGSolid.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4CSGSolid.hh
-G4Polyhedron.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Polyhedron.hh
-G4Cons.icc
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Cons.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Cons.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4DAWNFILE.hh
-G4VGraphicsSystem.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VGraphicsSystem.hh
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4DCofThisEvent.hh
 globals.hh
@@ -873,10 +565,6 @@ G4VDigiCollection.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VDigiCollection.hh
 vector
 -
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4DataInterpolation.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4DataVector.hh
 fstream
@@ -893,26 +581,6 @@ G4DataVector.icc
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4DataVector.icc
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4DataVector.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4DigiFilterFactories.hh
-G4VFilter.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VFilter.hh
-G4VModelFactory.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VModelFactory.hh
-G4VDigi.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VDigi.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4DisplacedSolid.hh
-G4VSolid.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VSolid.hh
-G4RotationMatrix.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4RotationMatrix.hh
-G4ThreeVector.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ThreeVector.hh
-G4Transform3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Transform3D.hh
-G4AffineTransform.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4AffineTransform.hh
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4DynamicParticle.hh
 cmath
@@ -977,16 +645,6 @@ vector
 -
 G4Element.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Element.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4EmLivermorePhysics.hh
-G4VPhysicsConstructor.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VPhysicsConstructor.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4EmLivermorePolarizedPhysics.hh
-G4EmLivermorePhysics.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4EmLivermorePhysics.hh
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4EnvironmentUtils.hh
 cstdlib
@@ -1074,10 +732,6 @@ globals.hh
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ForceCondition.hh
 
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4GMocrenFile.hh
-G4VGraphicsSystem.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VGraphicsSystem.hh
-
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4GPILSelection.hh
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4GRSSolid.hh
@@ -1108,34 +762,6 @@ G4GRSVolume.icc
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4GRSVolume.icc
 
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4GeneralParticleSource.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-vector
--
-G4Event.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Event.hh
-G4SingleParticleSource.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4SingleParticleSource.hh
-G4GeneralParticleSourceMessenger.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4GeneralParticleSourceMessenger.hh
-G4GeneralParticleSourceData.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4GeneralParticleSourceData.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4GeneralParticleSourceData.hh
-G4SingleParticleSource.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4SingleParticleSource.hh
-G4Threading.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Threading.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4GeneralParticleSourceMessenger.hh
-G4UImessenger.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4UImessenger.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4GeomConfig.hh
-
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4GeomSplitter.hh
 globals.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
@@ -1144,17 +770,7 @@ geomwdefs.hh
 G4AutoLock.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4AutoLock.hh
 
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4GeomTypes.hh
-G4GeomConfig.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4GeomConfig.hh
-
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4GlobalConfig.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4GraphicsSystemList.hh
-vector
--
-G4VGraphicsSystem.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VGraphicsSystem.hh
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4HCofThisEvent.hh
 globals.hh
@@ -1165,38 +781,6 @@ G4VHitsCollection.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VHitsCollection.hh
 vector
 -
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4HepRep.hh
-G4VGraphicsSystem.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VGraphicsSystem.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4HepRepFile.hh
-G4VGraphicsSystem.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VGraphicsSystem.hh
-G4HepRepFileXMLWriter.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4HepRepFileXMLWriter.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4HepRepFileXMLWriter.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-fstream
--
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4HitFilterFactories.hh
-G4VFilter.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VFilter.hh
-G4VModelFactory.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VModelFactory.hh
-G4VHit.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VHit.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ICRU90StoppingData.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-G4Material.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Material.hh
-G4LPhysicsFreeVector.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4LPhysicsFreeVector.hh
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4IonisParamElm.hh
 G4ios.hh
@@ -1230,10 +814,6 @@ vector
 G4Isotope.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Isotope.hh
 
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4LPhysicsFreeVector.hh
-G4PhysicsFreeVector.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4PhysicsFreeVector.hh
-
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Log.hh
 G4Types.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Types.hh
@@ -1266,14 +846,6 @@ globals.hh
 CLHEP/Vector/LorentzVector.h
 -
 
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4MCCIndexConversionTable.hh
-vector
--
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-G4ios.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ios.hh
-
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Material.hh
 vector
 -
@@ -1299,14 +871,6 @@ G4MaterialTable.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4MaterialTable.hh
 G4Threading.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Threading.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4MaterialCutsCouple.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-G4ios.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ios.hh
-G4ProductionCuts.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ProductionCuts.hh
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4MaterialPropertiesIndex.hh
 vector
@@ -1337,24 +901,6 @@ G4PhysicsOrderedFreeVector.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4MaterialTable.hh
 vector
 -
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ModelingParameters.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-G4VisExtent.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VisExtent.hh
-G4VisAttributes.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VisAttributes.hh
-G4VPhysicalVolume.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VPhysicalVolume.hh
-vector
--
-utility
--
-G4ModelingParameters.icc
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ModelingParameters.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ModelingParameters.icc
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4NavigationHistory.hh
 assert.h
@@ -1474,56 +1020,6 @@ G4Navigator.icc
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Navigator.icc
 
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4NistElementBuilder.hh
-vector
--
-CLHEP/Units/PhysicalConstants.h
--
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-G4Element.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Element.hh
-G4Threading.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Threading.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4NistManager.hh
-vector
--
-CLHEP/Units/PhysicalConstants.h
--
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-G4Material.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Material.hh
-G4NistElementBuilder.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4NistElementBuilder.hh
-G4NistMaterialBuilder.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4NistMaterialBuilder.hh
-G4ICRU90StoppingData.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ICRU90StoppingData.hh
-G4Pow.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Pow.hh
-G4Threading.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Threading.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4NistMaterialBuilder.hh
-vector
--
-CLHEP/Units/PhysicalConstants.h
--
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-G4Material.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Material.hh
-G4Threading.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Threading.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Normal3D.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-CLHEP/Geometry/Normal3D.h
--
-
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4NormalNavigation.hh
 iomanip
 -
@@ -1544,30 +1040,6 @@ G4NormalNavigation.icc
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4NormalNavigation.icc
 
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4NullModel.hh
-G4VModel.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VModel.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4OpenGLImmediateQt.hh
-G4OpenGLQt.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4OpenGLQt.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4OpenGLImmediateX.hh
-G4VGraphicsSystem.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VGraphicsSystem.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4OpenGLQt.hh
-G4VGraphicsSystem.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VGraphicsSystem.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4OpenGLStoredQt.hh
-G4OpenGLQt.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4OpenGLQt.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4OpenGLStoredX.hh
-G4VGraphicsSystem.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VGraphicsSystem.hh
-
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4OrderedTable.hh
 vector
 -
@@ -1585,12 +1057,6 @@ pwdefs.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/pwdefs.hh
 G4AutoLock.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4AutoLock.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4PVPlacement.hh
-G4VPhysicalVolume.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VPhysicalVolume.hh
-G4Transform3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Transform3D.hh
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ParameterisedNavigation.hh
 G4Types.hh
@@ -1680,54 +1146,6 @@ map
 G4ParticleDefinition.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ParticleDefinition.hh
 
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4PhysicalVolumeModel.hh
-G4VModel.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VModel.hh
-G4ModelingParameters.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ModelingParameters.hh
-G4VTouchable.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VTouchable.hh
-G4Transform3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Transform3D.hh
-G4Plane3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Plane3D.hh
-iostream
--
-vector
--
-map
--
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4PhysicsFreeVector.hh
-G4DataVector.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4DataVector.hh
-G4PhysicsVector.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4PhysicsVector.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4PhysicsListHelper.hh
-G4ios.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ios.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-vector
--
-G4ParticleDefinition.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ParticleDefinition.hh
-G4ParticleTable.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ParticleTable.hh
-G4PhysicsListOrderingParameter.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4PhysicsListOrderingParameter.hh
-G4ThreadLocalSingleton.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ThreadLocalSingleton.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4PhysicsListOrderingParameter.hh
-G4ios.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ios.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4PhysicsModelCatalog.hh
 vector
 -
@@ -1775,40 +1193,6 @@ G4PhysicsVector.icc
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4PhysicsVector.icc
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4PhysicsVectorType.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Plane3D.hh
-G4Normal3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Normal3D.hh
-G4Point3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Point3D.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-CLHEP/Geometry/Plane3D.h
--
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Point3D.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-CLHEP/Geometry/Point3D.h
--
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Polyhedron.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-HepPolyhedron.h
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/HepPolyhedron.h
-G4Visible.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Visible.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Pow.hh
-G4DataVector.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4DataVector.hh
-G4Exp.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Exp.hh
-G4Log.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Log.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4PrimaryParticle.hh
 globals.hh
@@ -1876,32 +1260,6 @@ G4ProcessVector.icc
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ProcessVector.icc
 
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ProductionCuts.hh
-vector
--
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-G4ios.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ios.hh
-G4ParticleDefinition.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ParticleDefinition.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ProductionCutsTable.hh
-cmath
--
-vector
--
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-G4ios.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ios.hh
-G4MaterialCutsCouple.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4MaterialCutsCouple.hh
-G4MCCIndexConversionTable.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4MCCIndexConversionTable.hh
-G4Region.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Region.hh
-
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Profiler.hh
 G4GlobalConfig.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4GlobalConfig.hh
@@ -1949,10 +1307,6 @@ PTL/Globals.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/PTL/Globals.hh
 timemory/utility/utility.hpp
 -
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4RayTracer.hh
-G4VGraphicsSystem.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VGraphicsSystem.hh
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ReferenceCountedHandle.hh
 G4Allocator.hh
@@ -2016,14 +1370,6 @@ globals.hh
 CLHEP/Vector/Rotation.h
 -
 
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Run.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-G4Profiler.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Profiler.hh
-vector
--
-
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4RunManager.hh
 rundefs.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/rundefs.hh
@@ -2048,62 +1394,6 @@ G4EventManager.hh
 globals.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
 
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4SPSAngDistribution.hh
-G4PhysicsOrderedFreeVector.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4PhysicsOrderedFreeVector.hh
-G4DataInterpolation.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4DataInterpolation.hh
-G4ParticleMomentum.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ParticleMomentum.hh
-G4SPSPosDistribution.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4SPSPosDistribution.hh
-G4SPSRandomGenerator.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4SPSRandomGenerator.hh
-G4Threading.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Threading.hh
-G4AutoLock.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4AutoLock.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4SPSEneDistribution.hh
-G4PhysicsOrderedFreeVector.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4PhysicsOrderedFreeVector.hh
-G4ParticleMomentum.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ParticleMomentum.hh
-G4ParticleDefinition.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ParticleDefinition.hh
-G4DataInterpolation.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4DataInterpolation.hh
-G4Threading.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Threading.hh
-G4Cache.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Cache.hh
-vector
--
-G4SPSRandomGenerator.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4SPSRandomGenerator.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4SPSPosDistribution.hh
-G4Navigator.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Navigator.hh
-G4SPSRandomGenerator.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4SPSRandomGenerator.hh
-G4Threading.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Threading.hh
-G4Cache.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Cache.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4SPSRandomGenerator.hh
-G4PhysicsOrderedFreeVector.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4PhysicsOrderedFreeVector.hh
-G4DataInterpolation.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4DataInterpolation.hh
-G4ThreeVector.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ThreeVector.hh
-G4Threading.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Threading.hh
-G4Cache.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Cache.hh
-
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4SandiaTable.hh
 G4OrderedTable.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4OrderedTable.hh
@@ -2117,56 +1407,6 @@ vector
 -
 CLHEP/Units/PhysicalConstants.h
 -
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Scene.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-G4ios.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ios.hh
-G4VisExtent.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VisExtent.hh
-G4Point3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Point3D.hh
-G4VModel.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VModel.hh
-vector
--
-G4Scene.icc
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Scene.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Scene.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4SceneHandlerList.hh
-vector
--
-G4VSceneHandler.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VSceneHandler.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4SceneList.hh
-G4Scene.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Scene.hh
-vector
--
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4SingleParticleSource.hh
-G4VPrimaryGenerator.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VPrimaryGenerator.hh
-G4ParticleMomentum.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ParticleMomentum.hh
-G4ParticleDefinition.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ParticleDefinition.hh
-G4SPSPosDistribution.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4SPSPosDistribution.hh
-G4SPSAngDistribution.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4SPSAngDistribution.hh
-G4SPSEneDistribution.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4SPSEneDistribution.hh
-G4SPSRandomGenerator.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4SPSRandomGenerator.hh
-G4Threading.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Threading.hh
-G4Cache.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Cache.hh
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4SmartTrackStack.hh
 G4StackedTrack.hh
@@ -2348,51 +1588,9 @@ G4String.icc
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4String.icc
 
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4SubtractionSolid.hh
-G4BooleanSolid.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4BooleanSolid.hh
-G4VSolid.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VSolid.hh
-G4RotationMatrix.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4RotationMatrix.hh
-G4ThreeVector.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ThreeVector.hh
-G4Transform3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Transform3D.hh
-G4AffineTransform.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4AffineTransform.hh
-
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4SystemOfUnits.hh
 CLHEP/Units/SystemOfUnits.h
 -
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4THitsCollection.hh
-G4VHitsCollection.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VHitsCollection.hh
-G4Allocator.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Allocator.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-vector
--
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4THitsMap.hh
-G4THitsCollection.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4THitsCollection.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-map
--
-unordered_map
--
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ThreadLocalSingleton.hh
-list
--
-G4AutoLock.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4AutoLock.hh
-G4Cache.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Cache.hh
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Threading.hh
 G4Types.hh
@@ -2534,14 +1732,6 @@ G4VTrajectory.hh
 G4UImessenger.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4UImessenger.hh
 
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4TrajectoriesModel.hh
-G4VModel.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VModel.hh
-vector
--
-map
--
-
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4TrajectoryContainer.hh
 vector
 -
@@ -2554,41 +1744,11 @@ G4VTrajectory.hh
 G4Allocator.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Allocator.hh
 
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4TrajectoryFilterFactories.hh
-G4VFilter.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VFilter.hh
-G4VModelFactory.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VModelFactory.hh
-G4VTrajectory.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VTrajectory.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4TrajectoryModelFactories.hh
-G4VModelFactory.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VModelFactory.hh
-G4VTrajectoryModel.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VTrajectoryModel.hh
-
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Transform3D.hh
 globals.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
 CLHEP/Geometry/Transform3D.h
 -
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Tubs.hh
-G4GeomTypes.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4GeomTypes.hh
-G4UTubs.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4UTubs.hh
-CLHEP/Units/PhysicalConstants.h
--
-G4CSGSolid.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4CSGSolid.hh
-G4Polyhedron.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Polyhedron.hh
-G4Tubs.icc
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Tubs.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Tubs.icc
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Types.hh
 G4GlobalConfig.hh
@@ -2597,54 +1757,6 @@ complex
 -
 tls.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/tls.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4UAdapter.hh
-G4ThreeVector.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ThreeVector.hh
-G4VSolid.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VSolid.hh
-G4AffineTransform.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4AffineTransform.hh
-G4VoxelLimits.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VoxelLimits.hh
-G4VGraphicsScene.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VGraphicsScene.hh
-G4Polyhedron.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Polyhedron.hh
-G4VisExtent.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VisExtent.hh
-G4BoundingEnvelope.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4BoundingEnvelope.hh
-G4AutoLock.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4AutoLock.hh
-G4GeomTypes.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4GeomTypes.hh
-VecGeom/base/Global.h
--
-VecGeom/base/Vector3D.h
--
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4UBox.hh
-G4UAdapter.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4UAdapter.hh
-VecGeom/volumes/UnplacedBox.h
--
-G4Polyhedron.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Polyhedron.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4UCons.hh
-G4UAdapter.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4UAdapter.hh
-VecGeom/volumes/UnplacedCone.h
--
-G4Polyhedron.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Polyhedron.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4UIExecutive.hh
-G4VUIshell.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VUIshell.hh
-map
--
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4UIcommand.hh
 vector
@@ -2660,25 +1772,9 @@ G4UItokenNum.hh
 G4ThreeVector.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ThreeVector.hh
 
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4UIcommandStatus.hh
-
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4UIdirectory.hh
 G4UIcommand.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4UIcommand.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4UImanager.hh
-vector
--
-fstream
--
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-icomsdefs.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/icomsdefs.hh
-G4VStateDependent.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VStateDependent.hh
-G4UIcommandStatus.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4UIcommandStatus.hh
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4UImessenger.hh
 globals.hh
@@ -2697,14 +1793,6 @@ G4UItokenNum.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4UItokenNum.hh
 globals.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4UTubs.hh
-G4UAdapter.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4UAdapter.hh
-VecGeom/volumes/UnplacedTube.h
--
-G4Polyhedron.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Polyhedron.hh
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4UnitsTable.hh
 vector
@@ -2732,14 +1820,6 @@ G4ClassificationOfNewTrack.hh
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4UserTrackingAction.hh
 
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VDigi.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-vector
--
-map
--
-
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VDigiCollection.hh
 globals.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
@@ -2762,91 +1842,9 @@ G4VSolid.hh
 G4ThreeVector.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ThreeVector.hh
 
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VFilter.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-G4String.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4String.hh
-iostream
--
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VGraphicsScene.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-G4Transform3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Transform3D.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VGraphicsSystem.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-vector
--
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VHit.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-vector
--
-map
--
-
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VHitsCollection.hh
 globals.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VMarker.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-G4Visible.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Visible.hh
-G4Point3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Point3D.hh
-G4Colour.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Colour.hh
-G4Color.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Color.hh
-G4VMarker.icc
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VMarker.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VMarker.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VModel.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-G4VisExtent.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VisExtent.hh
-G4Transform3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Transform3D.hh
-G4VModel.icc
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VModel.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VModel.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VModelFactory.hh
-G4String.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4String.hh
-iostream
--
-utility
--
-vector
--
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VModularPhysicsList.hh
-vector
--
-G4ios.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ios.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-rundefs.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/rundefs.hh
-G4VPhysicsConstructor.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VPhysicsConstructor.hh
-G4VUPLSplitter.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VUPLSplitter.hh
-G4VUserPhysicsList.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VUserPhysicsList.hh
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VPVParameterisation.hh
 G4Types.hh
@@ -2894,26 +1892,6 @@ G4VPhysicalVolume.icc
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VPhysicalVolume.icc
 
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VPhysicsConstructor.hh
-G4ParticleTable.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ParticleTable.hh
-G4PhysicsListHelper.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4PhysicsListHelper.hh
-G4VUPLSplitter.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VUPLSplitter.hh
-G4ios.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ios.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-rundefs.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/rundefs.hh
-vector
--
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VPrimaryGenerator.hh
-G4ThreeVector.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ThreeVector.hh
-
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VProcess.hh
 cmath
 -
@@ -2936,30 +1914,6 @@ G4ParticleChange.hh
 G4ProcessType.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ProcessType.hh
 
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VRML1File.hh
-G4VGraphicsSystem.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VGraphicsSystem.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VRML2File.hh
-G4VGraphicsSystem.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VGraphicsSystem.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VSceneHandler.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-G4VGraphicsScene.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VGraphicsScene.hh
-G4ViewerList.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ViewerList.hh
-G4ViewParameters.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ViewParameters.hh
-G4THitsMap.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4THitsMap.hh
-G4VSceneHandler.icc
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VSceneHandler.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VSceneHandler.icc
-
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VSolid.hh
 G4Types.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Types.hh
@@ -2975,12 +1929,6 @@ G4VSolid.icc
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VSolid.icc
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VSolid.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VStateDependent.hh
-G4ApplicationState.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ApplicationState.hh
-G4Types.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Types.hh
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VSteppingVerbose.hh
 vector
@@ -3022,77 +1970,11 @@ globals.hh
 G4ThreeVector.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ThreeVector.hh
 
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VTrajectoryModel.hh
-G4String.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4String.hh
-G4VTrajectory.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VTrajectory.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VTree.hh
-G4VGraphicsSystem.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VGraphicsSystem.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VUIshell.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VUPLSplitter.hh
-stdlib.h
--
-G4AutoLock.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4AutoLock.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-rundefs.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/rundefs.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VUserActionInitialization.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VUserDetectorConstruction.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-vector
--
-
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VUserEventInformation.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VUserPhysicsList.hh
-G4ios.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ios.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-rundefs.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/rundefs.hh
-tls.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/tls.hh
-G4ParticleDefinition.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ParticleDefinition.hh
-G4ParticleTable.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ParticleTable.hh
-G4ProductionCutsTable.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ProductionCutsTable.hh
-G4VUPLSplitter.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VUPLSplitter.hh
-G4Threading.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Threading.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VUserTrackInformation.hh
 globals.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VViewer.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-G4ViewParameters.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ViewParameters.hh
-G4PhysicalVolumeModel.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4PhysicalVolumeModel.hh
-G4VViewer.icc
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VViewer.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VViewer.icc
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VVisManager.hh
 G4Transform3D.hh
@@ -3105,196 +1987,6 @@ G4RotationMatrix.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VVolumeMaterialScanner.hh
 G4Types.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Types.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Vector3D.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-CLHEP/Geometry/Vector3D.h
--
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ViewParameters.hh
-CLHEP/Units/SystemOfUnits.h
--
-G4Vector3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Vector3D.hh
-G4Point3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Point3D.hh
-G4Plane3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Plane3D.hh
-G4VisAttributes.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VisAttributes.hh
-G4VMarker.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VMarker.hh
-G4ModelingParameters.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ModelingParameters.hh
-vector
--
-utility
--
-G4ViewParameters.icc
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ViewParameters.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ViewParameters.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ViewerList.hh
-vector
--
-G4VViewer.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VViewer.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VisAttributes.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-vector
--
-map
--
-graphics_reps_defs.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/graphics_reps_defs.hh
-G4Colour.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Colour.hh
-G4Color.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Color.hh
-CLHEP/Units/SystemOfUnits.h
--
-G4VisAttributes.icc
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VisAttributes.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VisAttributes.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VisExecutive.hh
-G4VisManager.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VisManager.hh
-G4VisExecutive.icc
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VisExecutive.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VisExecutive.icc
-G4ASCIITree.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ASCIITree.hh
-G4DAWNFILE.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4DAWNFILE.hh
-G4HepRep.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4HepRep.hh
-G4HepRepFile.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4HepRepFile.hh
-G4RayTracer.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4RayTracer.hh
-G4HitFilterFactories.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4HitFilterFactories.hh
-G4DigiFilterFactories.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4DigiFilterFactories.hh
-G4TrajectoryFilterFactories.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4TrajectoryFilterFactories.hh
-G4TrajectoryModelFactories.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4TrajectoryModelFactories.hh
-G4VRML1File.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VRML1File.hh
-G4VRML2File.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VRML2File.hh
-G4GMocrenFile.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4GMocrenFile.hh
-G4FukuiRenderer.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4FukuiRenderer.hh
-G4OpenGLImmediateX.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4OpenGLImmediateX.hh
-G4OpenGLStoredX.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4OpenGLStoredX.hh
-G4OpenGLImmediateWin32.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4OpenGLImmediateWin32.hh
-G4OpenGLStoredWin32.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4OpenGLStoredWin32.hh
-G4OpenGLImmediateXm.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4OpenGLImmediateXm.hh
-G4OpenGLStoredXm.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4OpenGLStoredXm.hh
-G4OpenGLImmediateQt.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4OpenGLImmediateQt.hh
-G4OpenGLStoredQt.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4OpenGLStoredQt.hh
-G4OpenGLImmediateWt.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4OpenGLImmediateWt.hh
-G4OpenInventorX.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4OpenInventorX.hh
-G4OpenInventorXtExtended.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4OpenInventorXtExtended.hh
-G4OpenInventorQt.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4OpenInventorQt.hh
-G4OpenInventorWin32.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4OpenInventorWin32.hh
-G4RayTracerX.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4RayTracerX.hh
-G4VRML1.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VRML1.hh
-G4VRML2.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VRML2.hh
-G4Qt3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Qt3D.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VisExtent.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-G4Point3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Point3D.hh
-G4Transform3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Transform3D.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VisManager.hh
-G4VVisManager.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VVisManager.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-G4GraphicsSystemList.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4GraphicsSystemList.hh
-G4ModelingParameters.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ModelingParameters.hh
-G4NullModel.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4NullModel.hh
-G4SceneHandlerList.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4SceneHandlerList.hh
-G4SceneList.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4SceneList.hh
-G4TrajectoriesModel.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4TrajectoriesModel.hh
-G4Transform3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Transform3D.hh
-G4UImessenger.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4UImessenger.hh
-iostream
--
-vector
--
-map
--
-G4Threading.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Threading.hh
-G4VisManager.icc
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VisManager.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VisManager.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Visible.hh
-globals.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/globals.hh
-iostream
--
-G4Visible.icc
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Visible.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Visible.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VoxelLimits.hh
-G4Types.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Types.hh
-geomdefs.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/geomdefs.hh
-G4ThreeVector.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4ThreeVector.hh
-assert.h
--
-G4VoxelLimits.icc
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VoxelLimits.icc
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VoxelLimits.icc
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4VoxelNavigation.hh
 geomdefs.hh
@@ -3335,16 +2027,6 @@ G4Types.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Types.hh
 iostream
 -
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/HepPolyhedron.h
-G4Types.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Types.hh
-G4Point3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Point3D.hh
-G4Normal3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Normal3D.hh
-G4Transform3D.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Transform3D.hh
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/PTL/Globals.hh
 algorithm
@@ -3441,14 +2123,6 @@ G4Exception.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Exception.hh
 G4EnvironmentUtils.hh
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4EnvironmentUtils.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/graphics_reps_defs.hh
-G4Types.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Types.hh
-
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/icomsdefs.hh
-G4Types.hh
-/home/advait/geant4/geant4.10.07.p01-install/include/Geant4/G4Types.hh
 
 /home/advait/geant4/geant4.10.07.p01-install/include/Geant4/pwdefs.hh
 G4Types.hh

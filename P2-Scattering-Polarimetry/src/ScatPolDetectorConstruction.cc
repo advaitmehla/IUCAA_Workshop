@@ -53,22 +53,38 @@ G4VPhysicalVolume* ScatPolDetectorConstruction::Construct()
   G4VisAttributes* logicWorld_VisAtt = new G4VisAttributes(false);
   logicWorld->SetVisAttributes(logicWorld_VisAtt);
   G4VPhysicalVolume* physiWorld = new G4PVPlacement(0,G4ThreeVector(),
-                                      logicWorld,"World",0,false,0);
+                                      logicWorld,"World",0,false,0,true);
 
-// Plastic scintillator material definition: Vinyl Toluene. 
-G4Material* vintol = nist->FindOrBuildMaterial("G4_PLASTIC_SC_VINYLTOLUENE");
-G4VSolid* rods = new G4Tubs("rod",0,0.5*mm,25*mm,0.,2*M_PI*rad);
-G4LogicalVolume* rod_LV = new G4LogicalVolume(rods,vintol,"rod_LV");
-G4VPhysicalVolume* rod_PV = new G4PVPlacement(0,G4ThreeVector(0,0,50*mm),rod_LV,"rod_PV",logicWorld,false,0,false);
-G4VisAttributes* rod_VisAtt = new G4VisAttributes(G4Color(1,0,0));
-rod_LV->SetVisAttributes(rod_VisAtt);
-// Define as material made up of Carbon and Hydrogen in fractional masses or get it 
-// from NIST manager 
+  // Plastic scintillator material definition: Vinyl Toluene. 
+  G4Material* vintol = nist->FindOrBuildMaterial("G4_PLASTIC_SC_VINYLTOLUENE");
+  G4VSolid* rods = new G4Tubs("rod",0,10*mm,25*mm,0.,2*M_PI*rad);
+  G4LogicalVolume* rod_LV = new G4LogicalVolume(rods,vintol,"rod_LV");
+  G4VPhysicalVolume* rod_PV = new G4PVPlacement(0,G4ThreeVector(0,0,0),rod_LV,"rod_PV",logicWorld,false,0,true);
+  G4VisAttributes* rod_VisAtt = new G4VisAttributes(G4Color(1,0,0));
+  rod_LV->SetVisAttributes(rod_VisAtt);
 
+  G4Material* Cs = nist->FindOrBuildMaterial("G4_Cs");
+  G4Material* I = nist->FindOrBuildMaterial("G4_I");
+  G4Material* Tl = nist->FindOrBuildMaterial("G4_Tl");
+  G4Material* csitl = new G4Material('CsITl',4.51*g/cm3,3);
+  csitl->AddMaterial(Cs,0.510549);
+  csitl->AddMaterial(I,.480451);
+  csitl->AddMaterial(Tl,0.009);
+  G4Box* detboxS = new G4Box('detbox',5*mm,20*mm,50*mm);
+  G4LogicalVolume* detboxLV = new G4LogicalVolume(detboxS,csitl,"detboxLV");
 
-// Define plastic scintillator solid, logical volume and physical volume
+  G4VisAttributes* det_VisAtt = new G4VisAttributes(G4Color(0,1,0));
+  detboxLV->SetVisAttributes(det_VisAtt);
+  G4double R = 80*mm;
+  G4VPhysicalVolume* detboxPVs[12];
+  
+  for(int i = 0;i<12;i++)
+  {
+    G4RotationMatrix * RotMat = new G4RotationMatrix();
+    RotMat->rotate(M_PI/2.+2*i*M_PI/12.,G4ThreeVector(0,0,1));
+    detboxPVs[i] = new G4PVPlacement(RotMat,G4ThreeVector(R*sin(2*M_PI/12*i),R*cos(2*M_PI/12*i),0),detboxLV,"detboxPV",logicWorld,true,i,true);
+  }
 
-// always return physical volume of world
 
 	return physiWorld;
 }
